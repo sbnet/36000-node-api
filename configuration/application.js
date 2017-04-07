@@ -19,7 +19,13 @@ var conf = convict({
     format: "port",
     default: 0,
     env: "PORT"
-  }
+  },
+  url: {
+    doc: "The api url.",
+    format: "url",
+    default: "http://localhost:3000",
+    env: "URL"
+  },
 });
 
 // Load environment dependent configuration

@@ -3,10 +3,10 @@
  *
  */
 
-var apiConfig = require('./apiConfig.js');
+var conf = require('./configuration/application.js');
 
 module.exports = {
-    'apiUrl': apiConfig.apiUrl,
+    'apiUrl': conf.get("url"),
     'cityUrl': '/city/id/',
     'areaUrl': '/area/id/',
     'regionUrl': '/region/id/',
